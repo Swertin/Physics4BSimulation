@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics 4B Simulation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <h1>
+        Scot Wertin's Physics 4B Physics Simulator
+    </h1>
+    <div>
+        <img src="assets/NewtonDrawing.jpg" width="500" height="500">
+        <canvas id="simulationCanvas" width="500" height="500">
+            Canvas not supported; please update your browser.
+        </canvas>
+    </div>
+    <div>
+        <input type="button" value="Launch!" id="launchButton">
+        <span>Launch Speed Adjustment </span>
+        <input type="range" min="0" max="10000" step="100" value="6000" id="speedAdjuster">
+        <p>Initial speed = <span id="speedReadout">6000</span> m/s</p>
+        <p>Current speed = <span id="currentSpeedReadout">6000</span> m/s</p>
+    </div>
+    <script src="assets/scripts/app.js"></script>
+</body>
+
+
+</html>
